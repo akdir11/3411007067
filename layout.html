@@ -13,12 +13,78 @@
             background-color: red;
             color: white;
         }
+        /* 相對位置 */
+        #box2{
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: blue;
+        }
+        /* 絕對位置 */
+        #box3{
+            position: absolute;
+            top: 180px;
+            left: 20px;
+            background-color: green;
+        }
+        /* 浮動 */
+        .tittle{
+            border: 1px solid;
+            height: 150px;
+        }
+        .left{
+            float: left;
+            background-color: red;
+            width: 50px;
+            height: 150px;
+        }
+        .right{
+            float: right;
+            background-color: blue;
+            width: 50px;
+            height: 150px;
+        }
+        .img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+        .overflow{
+            border: 1px solid;
+            height: 100px;
+            width: 200px;
+            overflow: scroll;
+        }
     </style>
 </head>
 <body>
+    <div>
+        123
+        <img class="img" src="https://fakeimg.pl/100x100/">
+    </div>
+    <br><br><br>
+    <br><br><br>
     <div class="box" id="box1">box1</div>
     <div class="box" id="box2">box2</div>
     <div class="box" id="box3">box3</div>
     <div class="box" id="box4">box4</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="tittle">
+        <div class="left">left</div>
+        <div class="right">right</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cumque hic provident soluta tempora reiciendis. Optio, ab repellendus. Minima consectetur ipsum dolorem ipsa reiciendis ad reprehenderit error dicta animi voluptas.
+        Quos voluptas ducimus assumenda culpa, eum hic voluptatum quibusdam officiis. Pariatur ex magnam velit reprehenderit ea enim, quae ducimus numquam cum repellat quia provident debitis doloribus, officia, earum ut laborum.
+        Aliquid, aspernatur neque? Reiciendis quas doloribus amet vero harum error alias ullam libero velit repellendus voluptates cumque, molestias, neque, quae nobis exercitationem tenetur cum? Hic, debitis aliquam. Libero, eius eligendi!
+        Assumenda, ab? Molestiae sapiente nisi velit doloribus. Quibusdam repellendus possimus at ea reprehenderit. Quaerat repellat ab tenetur praesentium rerum fuga, quas obcaecati delectus porro ducimus possimus totam accusantium distinctio perferendis.</p>
+    </div>
+    <br>     
+    <div class="overflow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil qui quam minus aperiam unde iure odio totam illo esse error, quas doloribus quos incidunt repellendus ipsum, optio dolorum. Reiciendis, repudiandae!
+    </div>
+    
 </body>
 </html>
